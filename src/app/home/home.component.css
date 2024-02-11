@@ -1,0 +1,24 @@
+.centered-links {
+    display: flex;
+    justify-content: center;
+}
+
+.rounded-link {
+    display: inline-block;
+    background-color: lightblue;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    min-width: 130px;
+}
+
+@media screen and (max-width: 650px) {
+    .centered-links {
+      flex-direction: column;
+      width: max-content;
+    }
+  }
+  
