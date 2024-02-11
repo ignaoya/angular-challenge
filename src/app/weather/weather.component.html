@@ -3,5 +3,5 @@
     <a href="weather/TOP" class="rounded-link">Kansas</a>
 </div>
 <div class="content">
-    <pre>{{ forecast?.temperatures | json }}</pre>
+    <app-line-chart  [forecast]="forecast"></app-line-chart>
 </div>

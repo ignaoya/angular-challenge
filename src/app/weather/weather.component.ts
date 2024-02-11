@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { ApiWeatherService } from '../api-weather.service';
 import { ActivatedRoute } from '@angular/router';
 import { Forecast } from '../forecast';
+import { LineChartComponent } from '../line-chart/line-chart.component';
 
 @Component({
   selector: 'app-weather',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    LineChartComponent,
   ],
   templateUrl: './weather.component.html',
   styleUrl: './weather.component.css'
@@ -16,7 +18,7 @@ import { Forecast } from '../forecast';
 export class WeatherComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
   weatherService: ApiWeatherService = inject(ApiWeatherService);
-  forecast: Forecast | undefined;
+  forecast: Forecast = { temperatures: {} };
 
   constructor() {
     const location = this.route.snapshot.params['id'];
@@ -26,5 +28,4 @@ export class WeatherComponent {
       }
     )
   }
-
 }
