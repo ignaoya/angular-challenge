@@ -13,6 +13,7 @@
     text-align: center;
     color: black;
     min-width: 130px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 @media screen and (max-width: 650px) {
