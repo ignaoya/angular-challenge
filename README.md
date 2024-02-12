@@ -1,27 +1,50 @@
-# AngularChallenge
+# Angular Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+This Angular application displays forecasted temperatures for the week using Chart.js.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To get a local copy of the project up and running, follow these simple steps.
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Before you begin, ensure you have the following installed:
 
-## Build
+- [Node.js](https://nodejs.org/) (which includes npm)
+- [Angular CLI](https://angular.io/cli)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installation
 
-## Running unit tests
+1. Clone the repository to your local machine:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    ```bash
+    git clone https://github.com/yourusername/angular-challenge.git
+    ```
 
-## Running end-to-end tests
+2. Navigate to the project directory:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```bash
+    cd angular-challenge
+    ```
 
-## Further help
+3. Install the necessary dependencies:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ```bash
+    npm install
+    ```
+
+### Development Server
+
+To run the application on a development server, use the following command:
+
+```bash
+ng serve
+```
+
+Navigate to http://localhost:4200/ in your web browser to view the app.
+
+
+## Additional Information
+
+- This project was bootstrapped with [Angular CLI](https://angular.io/cli).
+- It utilizes [Chart.js](https://www.chartjs.org/) for displaying charts.
