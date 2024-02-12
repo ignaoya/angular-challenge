@@ -9,11 +9,12 @@ export class ApiWeatherService {
   url_start: string = 'https://api.weather.gov/gridpoints/'
   url_end: string = '/31,80/forecast'
 
-  async getForecast(id: string): Promise<Forecast | undefined> {
+  async getForecast(id: string): Promise<Forecast> {
     const data = await fetch(`${this.url_start}/${id}/${this.url_end}`);
     const jsonData = await data.json();
 
-    if (!jsonData) return undefined;
+    if (!jsonData) return { temperatures: {} };
+    
     // process data to extract forecasted temperatures
     const temperatures: { [period: string]: number } = {};
     for (const period of jsonData.properties.periods) {
@@ -24,6 +25,6 @@ export class ApiWeatherService {
       temperatures: temperatures
     }
 
-    return forecast ?? {};
+    return forecast;
   }
 }

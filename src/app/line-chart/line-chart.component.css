@@ -1,0 +1,50 @@
+.card {
+    background: linear-gradient(-0deg, #a9a9fe, #ffd787);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); 
+    align-content: center;
+    width: 80vw;
+    height: auto;
+    border-radius: 10px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  #canvas {
+    display: inherit;
+    width: 80%;
+    height: auto;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  .card .about {
+    height: 185px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .card .about h3,
+  .card .about .lead {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+  
+  .card .about h3 {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .card .about .lead {
+    color: #eee;
+  }
+
+  @media screen and (max-width: 650px) {
+    .card {
+      font-size: 2.125rem;
+      height: 70vh;
+    }
+    #canvas {
+      height: 100%;
+    }
+  }
