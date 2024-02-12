@@ -10,8 +10,8 @@ To get a local copy of the project up and running, follow these simple steps.
 
 Before you begin, ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (which includes npm)
-- [Angular CLI](https://angular.io/cli)
+- [Node.js](https://nodejs.org/) (v18.18.0 was used)
+- [Angular CLI](https://angular.io/cli) (v17.1.3 was used)
 
 ### Installation
 
