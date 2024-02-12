@@ -17,7 +17,9 @@
 
 @media screen and (max-width: 650px) {
     .centered-links {
+      display: flex;
       flex-direction: column;
-      width: max-content;
+      align-items: center;
+      width: 80vw;
     }
   }

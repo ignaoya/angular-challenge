@@ -71,8 +71,26 @@ export class LineChartComponent implements OnChanges{
                   family: 'Helvetica Neue',
                   style: 'normal',
                   weight: 'bold',
-                }
+                },
+                usePointStyle: false,
+                boxWidth: 40,
+                boxHeight: 1,
               }
+            },
+            tooltip: {
+              enabled: true,
+              position: 'average',
+              mode: 'nearest',
+              intersect: false,
+              backgroundColor: 'rgba(173, 120, 220, 0.8)',
+              titleFont: {
+                weight: 'bold',
+                size: 16,
+              },
+              bodyFont: {
+                size: 14,
+              },
+              displayColors: false,
             }
           },
           aspectRatio: this.calculateAspectRatio(),
@@ -100,7 +118,7 @@ export class LineChartComponent implements OnChanges{
                 }
               } 
             }
-          }
+          },
         },
       })
     }
